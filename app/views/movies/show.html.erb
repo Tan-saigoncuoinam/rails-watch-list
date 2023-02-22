@@ -1,0 +1,11 @@
+<div class="container">
+  <h1><%= @movie.title %></h1>
+  <ul>
+      <li>Overview:<%= @movie.overview %></li>
+      <li>link:<%= @movie.poster_url %></li>
+      <li>Rating<%= @movie.rating %>/5</li>
+      <%= link_to "back to list", movies_path(@movie) %>
+      <%= link_to "add book mark to this movie", new_movie_bookmark_path(@movie) %>
+      </li>
+  </ul>
+</div>

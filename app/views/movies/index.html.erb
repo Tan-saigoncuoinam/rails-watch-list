@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>all movies</h1>
+  <ul>
+    <% @movies.each do |movie| %>
+      <li>
+        <%= movie.title %>
+        <%= link_to movie.title, movie_path(movie) %>
+      </li>
+    <% end %>
+  </ul>
+</div>

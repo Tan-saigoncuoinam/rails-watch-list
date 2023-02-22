@@ -1,0 +1,11 @@
+<div class="container">
+  <h1><%= @list.name %></h1>
+  <h2>show list of movies <%= @list.name %></h2>
+  <ul>
+    <% @list.bookmarks.each do |bookmark| %>
+      <li><%= bookmark.comment %></li>
+      <li><%= bookmark.movie.title %></li>
+    <% end %>
+      TODO: LINK TO MOVIE SHOW PAGE / DELETE MOVIE FROM LIST/ADD MOVIE TO LIST/GET BACK TO LISTS
+  </ul>
+</div>
