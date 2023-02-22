@@ -35,3 +35,5 @@ module RailsWatchList
     config.generators.system_tests = nil
   end
 end
+
+import "bootstrap";
