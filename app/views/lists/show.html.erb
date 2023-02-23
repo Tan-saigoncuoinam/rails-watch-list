@@ -1,6 +1,9 @@
 <div class="container">
   <h1><%= @list.name %></h1>
   <h2>show list of movies <%= @list.name %></h2>
+  <% @list.photos.each do |photo| %>
+    <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
+  <% end %>
   <ul>
     <% @list.bookmarks.each do |bookmark| %>
       <li><%= bookmark.comment %></li>
